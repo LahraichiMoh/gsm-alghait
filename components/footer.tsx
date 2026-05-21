@@ -88,129 +88,155 @@ export function Footer() {
   }, [openKey])
 
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Company Info */}
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-6 h-6 bg-primary-foreground rounded-sm"></div>
-              <h3 className="text-lg font-bold">GSM Al Ghait</h3>
+    <footer className="relative overflow-hidden bg-gradient-to-b from-primary to-primary/95 text-primary-foreground">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-24 -left-24 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
+        <div className="absolute -bottom-32 -right-24 h-96 w-96 rounded-full bg-accent/15 blur-3xl" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+        <div className="grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded bg-white/10 border border-white/15 flex items-center justify-center">
+                <div className="w-4 h-4 bg-primary-foreground rounded-sm" />
+              </div>
+              <div>
+                <p className="text-lg font-bold leading-none">GSM Al Ghait</p>
+                <p className="text-sm text-primary-foreground/80 font-light mt-1">
+                  Construction & travaux divers
+                </p>
+              </div>
             </div>
-            <p className="opacity-85 text-sm leading-relaxed font-light">
+
+            <p className="mt-5 text-sm leading-relaxed font-light text-primary-foreground/85 max-w-md">
               Excellence en construction et travaux divers. Votre vision, notre expertise, pour des ouvrages durables.
             </p>
+
+            <div className="mt-7 flex flex-col gap-3 text-sm">
+              <a
+                href="tel:+15551234567"
+                className="inline-flex items-center gap-2 text-primary-foreground/85 hover:text-primary-foreground transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                (555) 123-4567
+              </a>
+              <a
+                href="mailto:contact@gsmalghait.com"
+                className="inline-flex items-center gap-2 text-primary-foreground/85 hover:text-primary-foreground transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                contact@gsmalghait.com
+              </a>
+              <div className="inline-flex items-start gap-2 text-primary-foreground/85">
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>123 Construction Ave, Build City, BC</span>
+              </div>
+            </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-semibold mb-4 text-sm tracking-wide">Navigation</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link href="#hero" className="opacity-80 hover:opacity-100 transition-opacity text-sm font-light">
-                  Accueil
-                </Link>
-              </li>
-              <li>
-                <Link href="#about" className="opacity-80 hover:opacity-100 transition-opacity text-sm font-light">
-                  À propos
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="opacity-80 hover:opacity-100 transition-opacity text-sm font-light">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="#projects" className="opacity-80 hover:opacity-100 transition-opacity text-sm font-light">
-                  Projets
-                </Link>
-              </li>
-              {/* <li>
-                <Link href="#testimonials" className="opacity-80 hover:opacity-100 transition-opacity text-sm font-light">
-                  Témoignages
-                </Link>
-              </li> */}
-              <li>
-                <Link href="#certifications" className="opacity-80 hover:opacity-100 transition-opacity text-sm font-light">
-                  Certifications
-                </Link>
-              </li>
-              {/* <li>
-                <Link href="#process" className="opacity-80 hover:opacity-100 transition-opacity text-sm font-light">
-                  Processus
-                </Link>
-              </li> */}
-              {/* <li>
-                <Link href="#gallery" className="opacity-80 hover:opacity-100 transition-opacity text-sm font-light">
-                  Galerie
-                </Link>
-              </li> */}
-              <li>
-                <Link href="#contact" className="opacity-80 hover:opacity-100 transition-opacity text-sm font-light">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <div className="lg:col-span-7 grid gap-10 sm:grid-cols-2">
+            <div>
+              <h4 className="text-sm font-semibold tracking-wide text-primary-foreground">
+                Navigation
+              </h4>
+              <ul className="mt-4 space-y-3">
+                <li>
+                  <Link
+                    href="#hero"
+                    className="text-sm font-light text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  >
+                    Accueil
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#about"
+                    className="text-sm font-light text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  >
+                    À propos
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#services"
+                    className="text-sm font-light text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#projects"
+                    className="text-sm font-light text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  >
+                    Projets
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#certifications"
+                    className="text-sm font-light text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  >
+                    Certifications
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#contact"
+                    className="text-sm font-light text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2">
-              <li className="opacity-80 hover:opacity-100 transition-opacity text-sm">
-                Construction neuve
-              </li>
-              <li className="opacity-80 hover:opacity-100 transition-opacity text-sm">
-                Rénovation
-              </li>
-              <li className="opacity-80 hover:opacity-100 transition-opacity text-sm">
-                Électricité
-              </li>
-              <li className="opacity-80 hover:opacity-100 transition-opacity text-sm">
-                Plomberie
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <div className="space-y-3">
-              <div className="flex items-start gap-2">
-                <Phone className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span className="text-sm opacity-90">(555) 123-4567</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <Mail className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span className="text-sm opacity-90">contact@gsmalghait.com</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span className="text-sm opacity-90">123 Construction Ave, Build City, BC</span>
-              </div>
+            <div>
+              <h4 className="text-sm font-semibold tracking-wide text-primary-foreground">
+                Services
+              </h4>
+              <ul className="mt-4 space-y-3">
+                <li className="text-sm font-light text-primary-foreground/80">
+                  Construction neuve
+                </li>
+                <li className="text-sm font-light text-primary-foreground/80">
+                  Rénovation
+                </li>
+                <li className="text-sm font-light text-primary-foreground/80">
+                  Électricité
+                </li>
+                <li className="text-sm font-light text-primary-foreground/80">
+                  Plomberie
+                </li>
+                <li className="text-sm font-light text-primary-foreground/80">
+                  Menuiserie & finitions
+                </li>
+                <li className="text-sm font-light text-primary-foreground/80">
+                  Réparations générales
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-primary-foreground/20 pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center">
-            <p className="text-sm opacity-80">
+        <div className="mt-12 pt-8 border-t border-white/15">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <p className="text-sm text-primary-foreground/75">
               © {currentYear} GSM Al Ghait. Tous droits réservés.
             </p>
-            <div className="flex gap-6 mt-4 sm:mt-0">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
               <button
                 type="button"
                 onClick={() => setOpenKey('privacy')}
-                className="text-sm opacity-80 hover:opacity-100 transition-opacity"
+                className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground/40 focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded"
               >
                 Politique de confidentialité
               </button>
               <button
                 type="button"
                 onClick={() => setOpenKey('terms')}
-                className="text-sm opacity-80 hover:opacity-100 transition-opacity"
+                className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground/40 focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded"
               >
                 Conditions d’utilisation
               </button>
