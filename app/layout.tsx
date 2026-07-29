@@ -23,23 +23,54 @@ export const metadata: Metadata = {
     'I.M. Pro — Excellence en construction et travaux divers. Projets résidentiels, commerciaux et industriels.',
   keywords: ['construction', 'travaux', 'bâtiment', 'rénovation', 'maçonnerie', 'I.M. Pro'],
   generator: 'v0.app',
+  authors: [{ name: 'I.M. Pro', url: 'https://impro.ma' }],
+  creator: 'I.M. Pro',
+  publisher: 'I.M. Pro',
+  category: 'technology',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: '/improW.png',
+        sizes: 'any',
+        type: 'image/png',
       },
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/improW.png',
+        sizes: '64x64',
+        type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
+    shortcut: ['/improW.png'],
+    apple: [{ url: '/improW.png', sizes: '180x180' }],
   },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_MA',
+    url: 'https://impro.ma',
+    siteName: 'I.M. Pro',
+    title: 'I.M. Pro',
+    description:
+      'I.M. Pro — Excellence en construction et travaux divers. Projets résidentiels, commerciaux et industriels.',
+    images: [
+      {
+        url: '/improW.png',
+        width: 1200,
+        height: 630,
+        alt: 'I.M. Pro',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'I.M. Pro',
+    description:
+      'I.M. Pro — Excellence en construction et travaux divers. Projets résidentiels, commerciaux et industriels.',
+    images: ['/improW.png'],
+  },
+  alternates: {
+    canonical: 'https://impro.ma',
+  },
+  metadataBase: new URL('https://impro.ma'),
 }
 
 export default function RootLayout({
