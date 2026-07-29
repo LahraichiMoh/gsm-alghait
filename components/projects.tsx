@@ -43,7 +43,7 @@ const projects: Project[] = [
     image: '/images/slider-1.jpg',
     metrics: [
       { label: 'Durée', value: '18 mois' },
-      { label: 'Budget', value: '2,4 M$' },
+      { label: 'Budget', value: '2,4 M MAD' },
       { label: 'Lots', value: '12 logements' },
       { label: 'Certification', value: 'LEED Or' },
     ],
@@ -73,7 +73,7 @@ const projects: Project[] = [
     image: '/images/slider-2.jpg',
     metrics: [
       { label: 'Durée', value: '8 mois' },
-      { label: 'Budget', value: '1,8 M$' },
+      { label: 'Budget', value: '1,8 M MAD' },
       { label: 'Surface', value: '4 650 m²' },
       { label: 'Énergie', value: '-35%' },
     ],
@@ -103,7 +103,7 @@ const projects: Project[] = [
     image: '/images/slider-3.jpg',
     metrics: [
       { label: 'Durée', value: '5 mois' },
-      { label: 'Budget', value: '450 k$' },
+      { label: 'Budget', value: '450 k MAD' },
       { label: 'Performance', value: 'Systèmes modernisés' },
       { label: 'Impact', value: 'Déchets optimisés' },
     ],
@@ -133,7 +133,7 @@ const projects: Project[] = [
     image: '/images/gallery-1.jpg',
     metrics: [
       { label: 'Durée', value: '12 mois' },
-      { label: 'Budget', value: '3,2 M$' },
+      { label: 'Budget', value: '3,2 M MAD' },
       { label: 'Capacité', value: '+60%' },
       { label: 'ROI', value: '18 mois' },
     ],
