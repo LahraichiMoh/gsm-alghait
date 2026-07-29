@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, MapPin } from 'lucide-react'
 import { useMemo, useState } from 'react'
@@ -98,11 +99,16 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded bg-white/10 border border-white/15 flex items-center justify-center">
-                <div className="w-4 h-4 bg-primary-foreground rounded-sm" />
+              <div className="w-12 h-12 shrink-0 relative rounded-sm overflow-hidden bg-white/10 border border-white/15">
+                <Image
+                  src="/improW.png"
+                  alt="I. M. Pro logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div>
-                <p className="text-lg font-bold leading-none">GSM Al Ghait</p>
+                <p className="text-lg font-bold leading-none">I. M. Pro</p>
                 <p className="text-sm text-primary-foreground/80 font-light mt-1">
                   Construction & travaux divers
                 </p>
@@ -115,22 +121,22 @@ export function Footer() {
 
             <div className="mt-7 flex flex-col gap-3 text-sm">
               <a
-                href="tel:+15551234567"
+                href="tel:+212662615902',7"
                 className="inline-flex items-center gap-2 text-primary-foreground/85 hover:text-primary-foreground transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                (555) 123-4567
+                +212 662 61 59 02
               </a>
               <a
-                href="mailto:contact@gsmalghait.com"
+                href="mailto:contact@impro.ma"
                 className="inline-flex items-center gap-2 text-primary-foreground/85 hover:text-primary-foreground transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                contact@gsmalghait.com
+                contact@impro.ma
               </a>
               <div className="inline-flex items-start gap-2 text-primary-foreground/85">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>123 Construction Ave, Build City, BC</span>
+                <span>Immeuble 58 App N°03 2ème Etage Av Allal Ben Abdellah Hay EnnahdaIi Temara</span>
               </div>
             </div>
           </div>
@@ -223,7 +229,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-white/15">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <p className="text-sm text-primary-foreground/75">
-              © {currentYear} GSM Al Ghait. Tous droits réservés.
+              © {currentYear} I.M. Pro. Tous droits réservés.
             </p>
             <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
               <button

@@ -43,8 +43,8 @@ export function About() {
               </h3>
               <div className="mt-4 flex flex-wrap gap-2">
                 {features.map((feature) => (
-                  <Badge key={feature} variant="secondary" className="bg-muted text-foreground">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-accent" />
+                  <Badge key={feature} variant="secondary" className="bg-muted text-foreground inline-flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-accent shrink-0" />
                     {feature}
                   </Badge>
                 ))}

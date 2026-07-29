@@ -44,17 +44,17 @@ export function Contact() {
     {
       icon: Phone,
       title: 'Téléphone',
-      value: '(555) 123-4567',
+      value: '+212 662 61 59 02',
     },
     {
       icon: Mail,
       title: 'E-mail',
-      value: 'contact@gsmalghait.com',
+      value: 'contact@impro.ma',
     },
     {
       icon: MapPin,
       title: 'Adresse',
-      value: '123 Construction Ave, Build City, BC 12345',
+      value: 'Immeuble 58 App N°03 2ème Etage Av Allal Ben Abdellah Hay EnnahdaIi Temara',
     },
   ]
 
