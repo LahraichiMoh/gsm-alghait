@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/improW.png',
+        url: '/impro.png',
         sizes: 'any',
         type: 'image/png',
       },
       {
-        url: '/improW.png',
+        url: '/impro.png',
         sizes: '64x64',
         type: 'image/png',
       },
