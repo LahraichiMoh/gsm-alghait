@@ -55,7 +55,7 @@ export function About() {
           <div className="lg:col-span-6 space-y-6">
             <div className="relative rounded overflow-hidden border border-border/50 bg-muted/30 shadow-sm h-[420px]">
               <Image
-                src="https://images.pexels.com/photos/2383650/pexels-photo-2383650.jpeg"
+                src="about.avif"
                 alt="Équipe de construction sur chantier, contrôle qualité en cours"
                 fill
                 className="object-cover"

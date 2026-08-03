@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 
 const sliderImages = [
   {
-    src: '/images/slider-1.jpg',
+    src: '/images/1.avif',
     alt: 'Chantier de construction professionnelle pour un projet résidentiel',
   },
   {
